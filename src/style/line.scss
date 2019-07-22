@@ -1,0 +1,48 @@
+$multiLineHeight: 1.2em;
+/* 单行省略, 1行 */
+.oneline{
+    overflow: hidden;
+    word-break: break-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/* 公共区 */
+.multi-line-1,
+.multi-line-2,
+.multi-line-3,
+.multi-line-4{
+    overflow: hidden;
+    line-height: $multiLineHeight;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-align: justify;
+}
+
+/* 单行省略, 1行 */
+.multi-line-1{
+    -webkit-line-clamp: 1;
+    max-height: calc($multiLineHeight * 1);
+}
+/* 多行省略, 2行 */
+.multi-line-2{
+    max-height: calc($multiLineHeight * 2);
+    -webkit-line-clamp: 2;
+}
+/* 多行省略, 3行 */
+.multi-line-3{
+    max-height: calc($multiLineHeight * 3);
+    -webkit-line-clamp: 3;
+}
+/* 多行省略, 4行 */
+.multi-line-4{
+    max-height: calc($multiLineHeight * 4);
+    -webkit-line-clamp: 4;
+}
+/* 多行省略, 5行 */
+.multi-line-4{
+    max-height: calc($multiLineHeight * 5);
+    -webkit-line-clamp: 5;
+}

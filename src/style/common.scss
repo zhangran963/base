@@ -1,0 +1,18 @@
+@import './flex.scss';
+@import './line.scss';
+@import './element.scss';
+@import './icon.scss';
+@import './animation.scss';
+
+
+
+
+/* 弹窗动画 */
+@keyframes modal-show-fade-animation{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes modal-show-scale-animation{
+    0% {transform: scale(0.5);}
+    100% {transform: scale(1);}
+}
