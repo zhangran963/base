@@ -73,7 +73,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
                 to: config.dev.assetsSubDirectory,
                 ignore: [".*"]
             }
-        ])
+        ]),
     ]
 });
 

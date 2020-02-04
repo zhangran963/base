@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-		<com-header></com-header>
+		<!-- <com-header></com-header> -->
 
 		<router-view class="container"/>
 	</div>
