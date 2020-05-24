@@ -1,0 +1,41 @@
+/*
+ * 使用方式:
+ * @include oneline;
+ * @include text-ellipsis(3);
+ */
+
+
+/* 单行文本溢出 */
+/* 前向省略, 可设置 direction: rtl; */
+@mixin oneline {
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: keep-all;
+  text-overflow: ellipsis;
+}
+
+/* 多行文本溢出 */
+@mixin text-ellipsis ($line: 3) {
+  text-align: justify;
+  
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+/* flex横向 */
+@mixin flex-row($justifyContent: flex-start, $alignItems: center) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+/* flex纵向 */
+@mixin flex-col($justifyContent: flex-start, $alignItems: center) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}

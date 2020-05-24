@@ -7,10 +7,8 @@
 </template>
 
 <script>
-	import ComHeader from "@/components/ComHeader.vue";
 	export default {
 		name: "App",
-		components: { ComHeader }
 	};
 </script>
 
@@ -21,7 +19,6 @@
 		-moz-osx-font-smoothing: grayscale;
 		text-align: center;
 		color: #2c3e50;
-		color: red;
 
 
 		// 内容区

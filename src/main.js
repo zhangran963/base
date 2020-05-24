@@ -8,13 +8,15 @@ import router from "./router";
 
 
 /* 饿了么UI */
-import "element-ui/lib/theme-chalk/index.css";
-import "@/style/reset-element-ui.scss";
-import Message from "element-ui/lib/message";
-Vue.prototype.$message = Message;
-import Loading from "element-ui/lib/loading";
-Vue.prototype.$loading = Loading;
+// import "element-ui/lib/theme-chalk/index.css";
+// import Message from "element-ui/lib/message";
+// Vue.prototype.$message = Message;
+// import Loading from "element-ui/lib/loading";
+// Vue.prototype.$loading = Loading;
 
+Vue.prototype.$message = ELEMENT.Message;
+Vue.prototype.$loading = ELEMENT.Loading;
+import "@/style/reset-element-ui.scss";
 
 
 /* 全局变量 */
@@ -23,7 +25,7 @@ Vue.prototype.$loading = Loading;
 
 
 /* 自定义样式 */
-import "@/style/common.scss";
+import "@/style/index.scss";
 
 /* axios配置 */
 import "@/common/axios.config";
@@ -35,10 +37,7 @@ new Vue({
   template: "<App/>"
 });
 
-
 // if(process.env.NODE_ENV === "production"){
-
 // }
-import VConsole from "vconsole";
-var vConsole = new VConsole();
-// console.log('* main.js process', vConsole)
+
+new VConsole();

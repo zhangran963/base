@@ -190,8 +190,8 @@ export default {
      */
     resetFile() {
       /* 重置input元素 */
-      this.$refs.uploadForm.reset() 
-      console.log('* 重置')
+      this.$refs.uploadForm.reset();
+      console.log("* 重置");
       // this.fileInput.value = ''
       // this.fileInput.outerHTML = this.fileInput.outerHTML;
 
@@ -215,7 +215,7 @@ main {
   .upload-form {
     // outline: 1px solid;
     padding: 0em 1em 1em;
-    p{
+    p {
       text-align: left;
       padding: 1em 0;
     }
