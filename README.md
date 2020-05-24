@@ -33,11 +33,12 @@ proxyTable: {
         changeOrigin: true // 跨域
     }
 }
-// 2. 
+// 2.
 // mongod-start: 启动 mongodb
 ```
 
 ### 生产状态
+
 ```js
 // 1. nginx静态服务器: /home/ran/www/base/
 // 2. 页面请求接口统一到 https://api.thesoundofsilence.top/base

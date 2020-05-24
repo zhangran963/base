@@ -12,6 +12,8 @@ const portfinder = require("portfinder");
 
 const HOST = process.env.HOST;
 const PORT = process.env.PORT && Number(process.env.PORT);
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
 
 const devWebpackConfig = merge(baseWebpackConfig, {
     module: {
@@ -74,6 +76,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
                 ignore: [".*"]
             }
         ]),
+        new BundleAnalyzerPlugin()
     ]
 });
 

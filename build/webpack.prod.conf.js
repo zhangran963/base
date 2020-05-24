@@ -17,7 +17,7 @@ const webpackConfig = merge(baseWebpackConfig, {
   /* 声明排除的变量: {包名: 变量名} */
   externals: {
     // 'axios': 'axios',
-    // 'ali-oss': 'OSS'
+    'ali-oss': 'OSS'
   },
   module: {
     rules: utils.styleLoaders({

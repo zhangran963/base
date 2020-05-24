@@ -15,6 +15,14 @@ module.exports = {
     app: "./src/main.js",
     // vendor: ['axios']
   },
+  externals: {
+    'axios': 'axios',
+    'ali-oss': 'OSS',
+    'vue': 'Vue',
+    'vconsole': 'vconsole',
+    'vue-router': 'vue-router',
+    'element-ui': 'element-ui'
+  },
   output: {
     path: config.build.assetsRoot,
     filename: "[name].js",
@@ -73,13 +81,12 @@ module.exports = {
     ]
   },
   plugins: [
-    
     /* 自动加载模块，而不必到处 import 或 require */
     new webpack.ProvidePlugin({
-      axios: 'axios', /* 一般用法 */
+      // axios: 'axios', /* 一般用法 */
       // 'window.Vue': ['vue/dist/vue.esm.js', 'default'], /* 引入Vue并添加到对应属性 */
       // _map: ['lodash', 'map'],  /* 添加lodash的部分属性 */
-      Vue: ['vue/dist/vue.esm.js', 'default'],  /* 导出Vue Module的default值 */
+      // Vue: ['vue/dist/vue.esm.js', 'default'],  /* 导出Vue Module的default值 */
       '__inject': ['@/../config/__inject.js'], /* 注入页面的自定义变量 */
     }),
   ],
